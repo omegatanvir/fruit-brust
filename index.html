@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- fontawasame icon -->
+    <script src="https://kit.fontawesome.com/13fac3f82d.js" crossorigin="anonymous"></script>
     <!-- custom tailwind css style -->
     <script>
       tailwind.config = {
@@ -25,6 +27,7 @@
           extend: {
             colors: {
               'primary-fruit': "#F85559",
+              'black-fruit': "#121212",
             },
           },
         },
@@ -165,7 +168,34 @@
           </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+
+    </main>
+    <footer class="footer footer-center p-10 bg-black-fruit text-primary-content">
+        <div class=" py-20">
+          <div class="flex items-center">
+            <img class="mr-20 lg:mr-0" src="./assets/img/logo.png" alt="Logo">
+            <a class="text-4xl lg:ml-4 font-extrabold lg:text-white -ml-16 lg:mr-0">Fruit Burst</a>
+          </div>
+          <div class="pt-8">
+            <ul class="flex gap-8">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+          <div class="font-extrabold text-4xl flex gap-8 mt-8">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-apple"></i>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>
