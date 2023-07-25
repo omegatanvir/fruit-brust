@@ -24,14 +24,72 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              'primary-fruit': "#F85559",
             },
           },
         },
       };
     </script>
     <!-- Custom Internal CSS -->
-    <style></style>
+    <style>
+      .lato-font {
+        font-family: "Lato", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="container mx-auto">
+        <div class="navbar bg-primary-fruit rounded-full my-10 px-10">
+          <div class="navbar-start">
+            <div class="dropdown md:hidden lg:hidden">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+            <ul class="invisible lg:visible lg:flex lg:gap-5 lg:text-white">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <img src="./assets/img/logo.png" alt="Logo">
+            <a class="text-4xl ml-4 font-extrabold text-white">Fruit Burst</a>
+          </div>
+          <div class="navbar-end invisible lg:visible">
+            <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered rounded-full w-24 md:w-80" />
+              </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
